@@ -1,21 +1,21 @@
-# k8s-ws-ratchet
+# ws-ratchet
 
-This library provides a Ratchet based websocket adapter for the `crs/k8s` library.
+This library provides a Ratchet based websocket adapter for the `k8s/client` library.
 
 ## General Use with the K8s library / Configuration Options
 
 1. Install the library:
 
-`composer require crs/k8s-ws-ratchet`
+`composer require k8s/ws-ratchet`
 
 **Note**: If you don't need to change any TLS settings, this is all that is needed.
 
 2. If you need to configure any options, then you can use the below method to set those and use the websocket with them:
 
 ```php
-use Crs\K8s\K8s;
-use Crs\K8s\Options;
-use Crs\K8sWsRatchet\RatchetWebsocketAdapter;
+use K8s\Client\K8s;
+use K8s\Client\Options;
+use K8s\WsRatchet\RatchetWebsocketAdapter;
 
 $options = [
     # Set a timeout for the websocket connection

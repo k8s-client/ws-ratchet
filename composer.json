@@ -1,6 +1,6 @@
 {
-  "name": "crs/k8s-ws-ratchet",
-  "description": "Ratchet based websocket adapter for crs/k8s",
+  "name": "k8s/ws-ratchet",
+  "description": "Ratchet based websocket adapter for k8s/client",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
@@ -14,11 +14,11 @@
     "kubernetes"
   ],
   "repositories": [
-    { "type": "vcs", "url": "https://github.com/ChadSikorra/k8s.git" }
+    { "type": "vcs", "url": "https://github.com/ChadSikorra/k8s-core.git" }
   ],
   "require": {
     "php": ">=7.2",
-    "crs/k8s": "dev-master",
+    "k8s/core": "^1.0",
     "ratchet/pawl": "^0.3.0"
   },
   "require-dev": {
@@ -33,12 +33,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Crs\\K8sWsRatchet\\": "src/Crs/K8sWsRatchet"
+      "K8s\\WsRatchet\\": "src/K8s/WsRatchet"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "unit\\Crs\\K8sWsRatchet\\": "tests/unit/Crs/K8sWsRatchet"
+      "unit\\K8s\\WsRatchet\\": "tests/unit/K8s/WsRatchet"
     }
   },
   "scripts": {

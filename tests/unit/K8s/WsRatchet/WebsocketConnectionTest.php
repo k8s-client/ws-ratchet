@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the crs/k8s-ws-ratchet library.
+ * This file is part of the k8s/ws-ratchet library.
  *
  * (c) Chad Sikorra <Chad.Sikorra@gmail.com>
  *
@@ -11,9 +11,9 @@
 
 declare(strict_types=1);
 
-namespace unit\Crs\K8sWsRatchet;
+namespace unit\K8s\WsRatchet;
 
-use Crs\K8sWsRatchet\WebsocketConnection;
+use K8s\WsRatchet\WebsocketConnection;
 use Ratchet\Client\WebSocket;
 
 class WebsocketConnectionTest extends TestCase

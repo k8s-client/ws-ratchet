@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the crs/k8s-ws-ratchet library.
+ * This file is part of the k8s/ws-ratchet library.
  *
  * (c) Chad Sikorra <Chad.Sikorra@gmail.com>
  *
@@ -11,11 +11,11 @@
 
 declare(strict_types=1);
 
-namespace unit\Crs\K8sWsRatchet;
+namespace unit\K8s\WsRatchet;
 
-use Crs\K8s\Websocket\Contract\FrameHandlerInterface;
-use Crs\K8s\Websocket\Exception\WebsocketException;
-use Crs\K8sWsRatchet\RatchetWebsocketAdapter;
+use K8s\Core\Websocket\Contract\FrameHandlerInterface;
+use K8s\Core\Exception\WebsocketException;
+use K8s\WsRatchet\RatchetWebsocketAdapter;
 use Psr\Http\Message\RequestInterface;
 use React\EventLoop\LoopInterface;
 use React\Socket\ConnectorInterface;

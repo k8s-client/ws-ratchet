@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the crs/k8s-ws-ratchet library.
+ * This file is part of the k8s/ws-ratchet library.
  *
  * (c) Chad Sikorra <Chad.Sikorra@gmail.com>
  *
@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace unit\Crs\K8sWsRatchet;
+namespace unit\K8s\WsRatchet;
 
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use PHPUnit\Framework\TestCase as BaseTestCase;

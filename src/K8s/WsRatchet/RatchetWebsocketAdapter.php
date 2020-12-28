@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the crs/k8s-ws-ratchet library.
+ * This file is part of the k8s/ws-ratchet library.
  *
  * (c) Chad Sikorra <Chad.Sikorra@gmail.com>
  *
@@ -11,12 +11,12 @@
 
 declare(strict_types=1);
 
-namespace Crs\K8sWsRatchet;
+namespace K8s\WsRatchet;
 
-use Crs\K8s\Websocket\Contract\FrameHandlerInterface;
-use Crs\K8s\Websocket\Contract\WebsocketClientInterface;
-use Crs\K8s\Websocket\Exception\WebsocketException;
-use Crs\K8s\Websocket\Frame;
+use K8s\Core\Websocket\Contract\FrameHandlerInterface;
+use K8s\Core\Websocket\Contract\WebsocketClientInterface;
+use K8s\Core\Exception\WebsocketException;
+use K8s\Core\Websocket\Frame;
 use Psr\Http\Message\RequestInterface;
 use Ratchet\Client\Connector as RatchetConnector;
 use Ratchet\Client\WebSocket;
@@ -37,7 +37,7 @@ class RatchetWebsocketAdapter implements WebsocketClientInterface
     ];
 
     /**
-     * @var Connector
+     * @var ConnectorInterface
      */
     private $connector;
 

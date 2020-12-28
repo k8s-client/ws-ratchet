@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the crs/k8s-ws-ratchet library.
+ * This file is part of the k8s/ws-ratchet library.
  *
  * (c) Chad Sikorra <Chad.Sikorra@gmail.com>
  *
@@ -11,9 +11,9 @@
 
 declare(strict_types=1);
 
-namespace Crs\K8sWsRatchet;
+namespace K8s\WsRatchet;
 
-use Crs\K8s\Websocket\Contract\WebsocketConnectionInterface;
+use K8s\Core\Websocket\Contract\WebsocketConnectionInterface;
 use Ratchet\Client\WebSocket;
 
 class WebsocketConnection implements WebsocketConnectionInterface
