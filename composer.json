@@ -13,9 +13,6 @@
     "k8s",
     "kubernetes"
   ],
-  "repositories": [
-    { "type": "vcs", "url": "https://github.com/ChadSikorra/k8s-core.git" }
-  ],
   "require": {
     "php": ">=7.2",
     "k8s/core": "^1.0",
