@@ -59,6 +59,6 @@ class RatchetWebsocketAdapterTest extends TestCase
         ]);
 
         $this->expectException(WebsocketException::class);
-        $this->subject->connect('foo', $request, $handler);
+        $this->subject->connect($request, $handler);
     }
 }

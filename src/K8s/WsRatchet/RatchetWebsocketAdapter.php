@@ -62,7 +62,6 @@ class RatchetWebsocketAdapter implements WebsocketClientInterface
     }
 
     public function connect(
-        string $subprotocol,
         RequestInterface $request,
         FrameHandlerInterface $payloadHandler
     ): void {
@@ -75,7 +74,7 @@ class RatchetWebsocketAdapter implements WebsocketClientInterface
             $promise = call_user_func(
                 $connector,
                 (string)$uri,
-                [$subprotocol],
+                [$payloadHandler->subprotocol()],
                 $request->getHeaders()
             );
 
