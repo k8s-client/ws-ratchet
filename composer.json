@@ -45,6 +45,9 @@
     ],
     "analyse": [
       "phpstan analyse"
+    ],
+    "test-unit": [
+      "phpunit --testsuite unit --coverage-clover coverage-unit.xml"
     ]
   }
 }
