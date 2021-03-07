@@ -1,4 +1,4 @@
-# ws-ratchet
+# k8s-ws-ratchet
 
 This library provides a Ratchet based websocket adapter for the `k8s/client` library.
 
